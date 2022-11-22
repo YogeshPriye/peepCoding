@@ -1,3 +1,6 @@
+/**
+ * https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/string-with-difference-of-every-two-consecutive-characters-official/ojquestion
+ */
 package string;
 import java.io.*;
 import java.util.*;
