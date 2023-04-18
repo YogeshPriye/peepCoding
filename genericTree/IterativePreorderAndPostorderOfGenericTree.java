@@ -9,6 +9,7 @@ import java.util.*;
 public class IterativePreorderAndPostorderOfGenericTree {
   private static class Node {
     int data;
+    //int val;
     ArrayList<Node> children = new ArrayList<>();
   }
 
@@ -48,11 +49,11 @@ public class IterativePreorderAndPostorderOfGenericTree {
 
     return root;
   }
-  
+
   static class Pair {
 	  Node node;
 	  int state;
-	  
+
 	  Pair(Node node, int state) {
 		  this.node = node;
 		  this.state = state;
@@ -63,7 +64,7 @@ public class IterativePreorderAndPostorderOfGenericTree {
     // write your code here
 	  Stack<Pair> st = new Stack<>();
 	  st.push(new Pair(node, - 1));
-	  
+
 	  String pre = "";
 	  String post = "";
 	  while (st.size() > 0) {
